@@ -7,17 +7,23 @@ AndroidTutorial
 
 這個Android APP會在短短六小時的課程內容，帶領你認識大部份Android APP開發時會遇到的主題，從APP的規劃開始，畫面、互動、資料庫、多媒體、檔案、服務、通知、位置、地圖還有小工具，這些就是你會學到的東西。
 
-- Hello Android
-- Android App開發生命週期
-- 建立使用者畫面
-- 建立使用者互動
-- 儲存與讀取Preferences
-- 使用資料庫
+- Android Tutorial 第一堂
+  - Hello Android
+  - Android App開發生命週期
+  - 建立畫面
+- Android Tutorial 第二堂
+  - 建立互動
+  - 儲存與讀取Preferences
+  - 使用資料庫
+- Android Tutorial 第三堂
+  - 檔案系統
+  - 照相機
+  - 麥克風
+- Android Tutorial 第四堂
 - 服務
 - 通知
-- 照相機與檔案系統
-- 麥克風與檔案系統
 - 地點
+- Android Tutorial 第五堂
 - 地圖
 - 小工具
 
