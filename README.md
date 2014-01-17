@@ -1,7 +1,7 @@
 AndroidTutorial
 ===============
 
-為響應CodeData的「六小時系列」課程，思考了很久，六個小時的內容，可以讓一個有經驗的開發人員認識Android嗎？對我來說有點難，不過總得試試！
+你對「Tutorial」有什麼樣的感覺？每一種技術的Tutorial都告訴你這是學習的開始，不過最後好像都會變成折磨的開始。或許可以找出一種方式，讓Tutorial變成大家會很想要點它的超連結！
 
 要認識一種開發技術，每個人選擇的方式都會不太一樣，如果再加上只能使用非常簡短的時間，你會選擇哪一種方式呢？我的決定是選一個Android APP！
 
@@ -10,27 +10,27 @@ AndroidTutorial
 - Android Tutorial 第一堂
   - Hello Android
   - Android App開發生命週期
-  - 建立與使用資源
+  - Activity元件與資源
 - Android Tutorial 第二堂
-  - 建立畫面
-  - 建立互動
-  - 使用Preferences
+  - 設計應用程式畫面
+  - 設計使用者互動
+  - 使用Preferences儲存與讀取資訊
 - Android Tutorial 第三堂
   - 使用資料庫
   - 檔案系統
-  - 照相機
+  - 照相機與麥克風
 - Android Tutorial 第四堂
-  - 麥克風
-  - 服務
-  - 通知
+  - 建立與使用系統服務元件
+  - 使用系統通知服務
+  - 位置與地圖
 - Android Tutorial 第五堂
-  - 地點
-  - 地圖
-  - 感應設備
+  - 建立小工具元件
+  - 使用Fragment設計畫面
+  - 讀取感應設備資訊
 - Android Tutorial 第六堂
-  - 小工具
-  - 使用Fragment
-  - 設計平板電腦畫面
+  - Android App與網頁應用程式
+  - 使用GCM設計雲端應用程式
+  - Google Service - Google+
 
 ===============
 http://www.codedata.com.tw
