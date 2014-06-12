@@ -7,10 +7,10 @@
 這個Android APP會在短短六小時的課程內容，帶領你認識大部份Android  APP開發時會遇到的主題，從APP的規劃開始，畫面、互動、資料庫、多媒體、檔案、服務、通知、位置、地圖還有小工具，這些就是你會學到的東西。
 
 *	Android Tutorial 第一堂
-	*	西遊記裡的那隻潑猴
-	*	準備Android開發環境
-	*	開始設計Android應用程式
-	*	開發Android應用程式的準備工作
+	*	[西遊記裡的那隻潑猴](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-1-sunwukong/)
+	*	[準備Android開發環境](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-2-android-sdk/)
+	*	[開始設計Android應用程式](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-3-app-project/)
+	*	[開發Android應用程式的準備工作](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-4-before-developing-an-app/)
 *	Android Tutorial 第二堂
 	*	建立應用程式需要的資源
 	*	設計應用程式使用者介面
