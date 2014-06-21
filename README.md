@@ -18,4 +18,4 @@
 	*	建立與使用Activity元件
 
 ===============
-<a href="http://www.codedata.com.tw/author/michael" target="_blank">http://www.codedata.com.tw/author/michael</a>
+http://www.codedata.com.tw/author/michael
