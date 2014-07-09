@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 為選單項目加入「android:onClick」設定 -->
+   <item
+       android:id="@+id/search_item"
+       android:showAsAction="always"
+       android:icon="@android:drawable/ic_menu_search"
+       android:onClick="clickMenuItem" />        
+       
+   <item
+       android:id="@+id/add_item"
+       android:showAsAction="always"
+       android:icon="@android:drawable/ic_menu_add"
+       android:onClick="clickMenuItem" />    
+   
+   <item
+       android:id="@+id/revert_item"
+       android:showAsAction="always"
+       android:icon="@android:drawable/ic_menu_revert"
+       android:onClick="clickMenuItem" />         
+           
+   <item
+       android:id="@+id/delete_item"
+       android:showAsAction="always"
+       android:icon="@android:drawable/ic_menu_delete"
+       android:onClick="clickMenuItem" />
+   
+   <!-- 這是外層的選單項目，所以不用設定 -->
+    <item
+        android:id="@+id/share_item"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_share" >
+        
+        <menu>
+            <item 
+                android:id="@+id/googleplus_item"
+                android:title="Google+"
+                android:onClick="clickMenuItem" />
+            <item
+                android:id="@+id/facebook_item" 
+                android:title="Facebook"
+                android:onClick="clickMenuItem" />
+        </menu>
+    </item> 
+    
+</menu>
