@@ -13,7 +13,7 @@
 	*	[開發Android應用程式的準備工作](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-4-before-developing-an-app/)
 *	Android Tutorial 第二堂
 	*	[建立應用程式需要的資源](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-1-res/)
-	*	設計應用程式使用者介面
+	*	[設計應用程式使用者介面](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-2-ui/)
 	*	應用程式與使用者的互動
 	*	建立與使用Activity元件
 
