@@ -16,6 +16,8 @@
 	*	[設計應用程式使用者介面](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-2-ui/)
 	*	應用程式與使用者的互動
 	*	建立與使用Activity元件
-
+*	Android Tutorial 第三堂
+	*	為ListView元件建立自定畫面
+	*	儲存與讀取應用程式資訊
 ===============
 http://www.codedata.com.tw/author/michael
