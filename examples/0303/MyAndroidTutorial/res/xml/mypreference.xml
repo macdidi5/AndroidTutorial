@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 預設顏色 -->
+	<!-- android:key 設定資料名稱 -->
+	<!-- android:title 設定畫面上顯示的標題 -->
+	<!-- android:summary 設定畫面上顯示的說明 -->
+    <Preference
+        android:key="DEFAULT_COLOR"
+        android:title="@string/default_color"
+        android:summary="@string/default_color_summary">
+        <!-- 啟動選擇顏色元件 -->
+        <intent 
+            android:action="net.macdidi.myandroidtutorial.CHOOSE_COLOR"
+            android:targetPackage="net.macdidi.myandroidtutorial"
+            android:targetClass="net.macdidi.myandroidtutorial.ColorActivity"/>
+    </Preference>
+
+    <!-- 預設提醒時間 -->
+    <!-- android:entries 設定畫面顯示選項內容的陣列資源 -->
+    <!-- android:entriyValues 設定儲存選項資料的陣列資源 -->
+    <!-- android:defaultValue 設定選項預設項目編號 -->
+    <ListPreference
+        android:key="NOTIFY_MINUTES"
+        android:title="@string/default_notify"
+        android:summary="@string/default_notify_summary"
+        android:entries="@array/notify_minutes_array"
+        android:entryValues="@array/notify_minutes_value_array"
+        android:defaultValue="5" />
+</PreferenceScreen>
