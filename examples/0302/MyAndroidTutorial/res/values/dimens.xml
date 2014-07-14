@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">6dp</dimen>
+    <dimen name="default_margin">2dp</dimen>
+    <dimen name="title_txt_size">24sp</dimen>
+</resources>
