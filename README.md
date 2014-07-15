@@ -20,6 +20,9 @@
 	*	為ListView元件建立自定畫面
 	*	儲存與讀取應用程式資訊
 	*	使用Android內建的SQLite資料庫
+	*	存取Android檔案系統
+*	Android Tutorial 第四堂
+	*	使用照相機與麥克風
 
 ===============
 http://www.codedata.com.tw/author/michael
