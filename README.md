@@ -14,7 +14,7 @@
 *	Android Tutorial 第二堂
 	*	[建立應用程式需要的資源](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-1-res/)
 	*	[設計應用程式使用者介面](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-2-ui/)
-	*	應用程式與使用者的互動
+	*	[應用程式與使用者的互動](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-3-interaction/)
 	*	建立與使用Activity元件
 *	Android Tutorial 第三堂
 	*	為ListView元件建立自定畫面
