@@ -225,14 +225,17 @@ public class MainActivity extends Activity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             // 刪除所有已勾選的項目
-                            for (int i = 0; i < itemAdapter.getCount(); i++) {
-                                Item item = itemAdapter.get(i);
-                                
-                                // 如果是勾選的項目就刪除它
-                                if (item.isSelected()) {
-                                    itemAdapter.remove(item);
-                                }
-                            }
+                            int index = itemAdapter.getCount() - 1;
+                        	
+                        	while (index > -1) {
+                        		Item item = itemAdapter.get(index);
+                        		
+                        		if (item.isSelected()) {
+                        			itemAdapter.remove(item);
+                        		}
+                        		
+                        		index--;
+                        	}
                             
                             // 通知資料改變
                             itemAdapter.notifyDataSetChanged();

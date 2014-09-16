@@ -187,15 +187,19 @@ public class MainActivity extends Activity {
                     new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            for (int i = 0; i < itemAdapter.getCount(); i++) {
-                                Item item = itemAdapter.get(i);
-                                
-                                if (item.isSelected()) {
-                                    itemAdapter.remove(item);
-                                }
-                            }
-                            
-                            itemAdapter.notifyDataSetChanged();
+                            int index = itemAdapter.getCount() - 1;
+                        	
+                        	while (index > -1) {
+                        		Item item = itemAdapter.get(index);
+                        		
+                        		if (item.isSelected()) {
+                        			itemAdapter.remove(item);
+                        		}
+                        		
+                        		index--;
+                        	}
+                        	
+                        	itemAdapter.notifyDataSetChanged();
                         }
                     });
             d.setNegativeButton(android.R.string.no, null);
