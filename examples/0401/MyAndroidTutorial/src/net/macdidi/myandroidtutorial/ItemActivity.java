@@ -51,6 +51,11 @@ public class ItemActivity extends Activity {
 	    }
 	    else {
 	    	item = new Item();
+		// 建立SharedPreferences物件
+		SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+		// 讀取設定的預設顏色
+		int color = sharedPreferences.getInt("DEFAULT_COLOR", -1);
+		item.setColor(getColors(color));
 	    }
 	     
 	}
@@ -143,10 +148,6 @@ public class ItemActivity extends Activity {
 		    }
 		    else {
 		    	item.setDatetime(new Date().getTime());
-		    	SharedPreferences sharedPreferences =
-						PreferenceManager.getDefaultSharedPreferences(this);
-				int color = sharedPreferences.getInt("DEFAULT_COLOR", -1);
-				item.setColor(getColors(color));
 		    }
 
 			Intent result = getIntent();
