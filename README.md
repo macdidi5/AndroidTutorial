@@ -15,14 +15,14 @@
 	*	[建立應用程式需要的資源](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-1-res/)
 	*	[設計應用程式使用者介面](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-2-ui/)
 	*	[應用程式與使用者的互動](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-3-interaction/)
-	*	建立與使用Activity元件
+	*	[建立與使用Activity元件](http://www.codedata.com.tw/mobile/android-tutorial-the-2nd-class-4-activity/)
 *	Android Tutorial 第三堂
-	*	為ListView元件建立自定畫面
-	*	儲存與讀取應用程式資訊
-	*	使用Android內建的SQLite資料庫
-	*	存取Android檔案系統
+	*	[為ListView元件建立自定畫面](http://www.codedata.com.tw/mobile/android-tutorial-the-3rd-class-1-listview/)
+	*	[儲存與讀取應用程式資訊](http://www.codedata.com.tw/mobile/android-tutorial-the-3rd-class-2-preference)
+	*	[使用Android內建的SQLite資料庫](http://www.codedata.com.tw/mobile/android-tutorial-the-3rd-class-3-sqlite/)
+	*	[存取Android檔案系統](http://www.codedata.com.tw/mobile/android-tutorial-the-3rd-class-4-filesystem/)
 *	Android Tutorial 第四堂
-	*	使用照相機與麥克風
+	*	[使用照相機與麥克風](http://www.codedata.com.tw/mobile/android-tutorial-the-4th-class-1-camera-microphone/)
 
 ===============
 http://www.codedata.com.tw/author/michael
