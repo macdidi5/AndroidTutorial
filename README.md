@@ -1,5 +1,11 @@
 #Android Tutorial
 
+===============
+
+* 2015/03/02：現有專欄與範例程式全面昇級為Android 5與Android Studio
+
+===============
+
 你對「Tutorial」有什麼樣的感覺？每一種技術的Tutorial都告訴你這是學習的開始，不過最後好像都會變成折磨的開始。或許可以找出一種方式，讓Tutorial變成大家會很想要點它的超連結！
 
 要認識一種開發技術，每個人選擇的方式都會不太一樣，如果再加上只能使用非常簡短的時間，你會選擇哪一種方式呢？我的決定是選一個Android APP！
@@ -22,10 +28,6 @@
 	*	[使用Android內建的SQLite資料庫](http://www.codedata.com.tw/mobile/android-tutorial-the-3rd-class-3-sqlite/)
 *	Android Tutorial 第四堂
 	*	[使用照相機與麥克風](http://www.codedata.com.tw/mobile/android-tutorial-the-4th-class-1-camera-microphone/)
-===============
-#改版紀錄：
-
-* 2015/03/02：現有專欄與範例程式全面昇級為Android 5與Android Studio
 
 ===============
 http://www.codedata.com.tw/author/michael
