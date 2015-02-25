@@ -8,7 +8,7 @@
 
 *	Android Tutorial 第一堂
 	*	[西遊記裡的那隻潑猴](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-1-sunwukong/)
-	*	[準備Android開發環境](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-2-android-sdk/)
+	*	[準備Android Studio開發環境](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-2-android-sdk/)
 	*	[開始設計Android應用程式](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-3-app-project/)
 	*	[開發Android應用程式的準備工作](http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-4-before-developing-an-app/)
 *	Android Tutorial 第二堂
