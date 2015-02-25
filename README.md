@@ -1,6 +1,7 @@
 #Android Tutorial
 
-## 2015/03/02：專欄與範例程式改為Android 5與Android Studio
+### 2015/03/02：專欄與範例程式改為Android 5與Android Studio
+### 需要從Eclipse ADT專案轉移到Android Studio，請參考<https://github.com/macdidi5/AndroidTutorial/blob/master/AndroidTutorial5_Migrate.md>
 
 你對「Tutorial」有什麼樣的感覺？每一種技術的Tutorial都告訴你這是學習的開始，不過最後好像都會變成折磨的開始。或許可以找出一種方式，讓Tutorial變成大家會很想要點它的超連結！
 
