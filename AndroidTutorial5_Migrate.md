@@ -8,19 +8,19 @@ CodeDate的Android Studio系列專欄，在連載的中途發表Android 5 Lollip
 1. 依照<http://www.codedata.com.tw/mobile/android-tutorial-the-1st-class-2-android-sdk/>的說明，安裝好Android Studio開發環境。
 2. 啟動Android Studio，選擇「Import project(Eclipse ADT, Gradle, etc.)」：
 
-    ![](images/migrate/AndroidTutorial5_migrate_01.PNG)
+    ![](https://github.com/macdidi5/AndroidTutorial/blob/master/images/migrate/AndroidTutorial5_migrate_01.png)
  
 3. 選擇使用Eclipse ADT開發的Android應用程式專案：
 
-    ![](images/migrate/AndroidTutorial5_migrate_02.PNG)
+    ![](https://github.com/macdidi5/AndroidTutorial/blob/master/images/migrate/AndroidTutorial5_migrate_02.png)
 
 4. 選擇轉移後的專案儲存位置，選擇「Next」:
 
-    ![](images/migrate/AndroidTutorial5_migrate_03.PNG)
+    ![](https://github.com/macdidi5/AndroidTutorial/blob/master/images/migrate/AndroidTutorial5_migrate_03.png)
 
 5. 選擇「Finish」:
 
-    ![](images/migrate/AndroidTutorial5_migrate_04.PNG)
+    ![](https://github.com/macdidi5/AndroidTutorial/blob/master/images/migrate/AndroidTutorial5_migrate_04.png)
 
 6. 等候Android Studio完成轉換工作並開啟專案後，你會發現專案有一些錯誤。開啟「MyAndroidTutorial -> app -> build.gradle」，參考下面的內容，修改並儲存這個檔案（注意applicationId的設定，必須參考你實際的專案修正）：
 
@@ -72,10 +72,10 @@ CodeDate的Android Studio系列專欄，在連載的中途發表Android 5 Lollip
 
 8. 選擇「Try Again」：
 
-    ![](images/migrate/AndroidTutorial5_migrate_05.PNG)
+    ![](https://github.com/macdidi5/AndroidTutorial/blob/master/images/migrate/AndroidTutorial5_migrate_05.png)
 
 9. 選擇「Yes」讓Android Studio關閉與重新啟動專案：
 
-    ![](images/migrate/AndroidTutorial5_migrate_06.PNG)
+    ![](https://github.com/macdidi5/AndroidTutorial/blob/master/images/migrate/AndroidTutorial5_migrate_06.png)
 
 10. 接下來就可以依照專欄的內容，使用Android Studio開發工具繼續學習。
