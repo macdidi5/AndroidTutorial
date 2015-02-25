@@ -1,4 +1,4 @@
-#Android Tutorial 從Eclipse ADT轉移到Android Studio
+#從Eclipse ADT轉移到Android Studio
 CodeDate的Android Studio系列專欄，在連載的中途發表Android 5 Lollipop，還有全新的開發工具Android Studio。因為版本與開發工具的變化非常大，因此決定把系列專欄昇級為Android 5與Android Studio，專欄與範例程式專案在2015/03/02同步更新。
 
 因為之前的範例程式專案採用Eclipse ADT，如果你已經依照之前的專欄撰寫應用程式，可以考慮將它轉移到Android Studio，再繼續依照後續的專欄學習全新的Android Studio。
