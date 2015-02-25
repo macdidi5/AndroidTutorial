@@ -1,6 +1,5 @@
 #Android Tutorial
 
-===============
 * 2015/03/02：現有專欄與範例程式全面昇級為Android 5與Android Studio
 ===============
 
