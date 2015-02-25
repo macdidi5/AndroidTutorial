@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_grey">#CCCCCC</color>
+    <color name="grey">#AAAAAA</color>
+    <color name="divider_color">#DD999999</color>
+</resources>

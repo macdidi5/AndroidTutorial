@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!-- 設定 -->
+    <item
+        android:title="Setting"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:onClick="clickPreferences" />
+    <item
+        android:id="@+id/search_item"
+        app:showAsAction="always"
+        android:title="SEARCH"
+        android:icon="@android:drawable/ic_menu_search"
+        android:onClick="clickMenuItem"/>
+
+    <item
+        android:id="@+id/add_item"
+        app:showAsAction="always"
+        android:title="ADD"
+        android:icon="@android:drawable/ic_menu_add"
+        android:onClick="clickMenuItem"/>
+
+    <item
+        android:id="@+id/revert_item"
+        app:showAsAction="always"
+        android:title="REVERT"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:onClick="clickMenuItem"/>
+
+    <item
+        android:id="@+id/delete_item"
+        app:showAsAction="always"
+        android:title="DELETE"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:onClick="clickMenuItem"/>
+
+    <item
+        android:id="@+id/share_item"
+        app:showAsAction="always"
+        android:title="SHARE"
+        android:icon="@android:drawable/ic_menu_share" >
+
+        <menu>
+            <item
+                android:id="@+id/googleplus_item"
+                android:title="Google+"
+                android:onClick="clickMenuItem"/>
+            <item
+                android:id="@+id/facebook_item"
+                android:title="Facebook"
+                android:onClick="clickMenuItem"/>
+        </menu>
+    </item>
+</menu>
