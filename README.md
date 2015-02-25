@@ -22,6 +22,10 @@
 	*	[使用Android內建的SQLite資料庫](http://www.codedata.com.tw/mobile/android-tutorial-the-3rd-class-3-sqlite/)
 *	Android Tutorial 第四堂
 	*	[使用照相機與麥克風](http://www.codedata.com.tw/mobile/android-tutorial-the-4th-class-1-camera-microphone/)
+===============
+#改版紀錄：
+
+* 2015/03/02：現有專欄與範例程式全面昇級為Android 5與Android Studio
 
 ===============
 http://www.codedata.com.tw/author/michael
