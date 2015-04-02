@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyAndroidTutorial</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">標題</string>
+    <string name="enter_title">輸入標題</string>
+    <string name="content">內容</string>
+    <string name="enter_content">輸入內容</string>
+    <string name="about">這是Android Tutorial應用程式</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="version">版本：AndroidTutorial_0.2.4</string>
+    <string name="title_activity_item">ItemActivity</string>
+    <string name="title_activity_color">ColorActivity</string>
+    <string name="delete">刪除</string>
+    <string name="delete_item">確定要刪除 %1$d 個項目？</string>
+    <string name="default_color">預設的顏色</string>
+    <string name="default_color_summary">新增記事的預設顏色</string>
+
+    <string name="default_notify">預設提醒時間</string>
+    <string name="default_notify_summary">在指定的時間之前通知</string>
+
+    <string-array name="notify_minutes_array">
+        <item>五分鐘</item>
+        <item>十分鐘</item>
+        <item>二十分鐘</item>
+        <item>三十分鐘</item>
+        <item>六十分鐘</item>
+    </string-array>
+
+    <string-array name="notify_minutes_value_array">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="title_record">語音備忘</string>
+    <string name="title_play">播放語音備忘</string>
+    <string name="record_play">播放</string>
+    <string name="record_new">重新錄製</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

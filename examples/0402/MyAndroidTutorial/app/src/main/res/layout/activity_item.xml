@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 使用ScrollView為最外層的元件 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 刪除xmlns:android的設定 -->
+    <TableLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        tools:context="net.macdidi.myandroidtutorial.ItemActivity">
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/title"
+                android:background="@drawable/retangle_drawable"
+                android:padding="6sp"
+                android:layout_margin="2sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/title_text"
+                android:hint="@string/enter_title"
+                android:background="@drawable/retangle_drawable"
+                android:padding="6sp"
+                android:layout_margin="2sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/content"
+                android:layout_height="200sp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/retangle_drawable"
+                android:padding="6sp"
+                android:layout_margin="2sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/content_text"
+                android:hint="@string/enter_content"
+                android:layout_gravity="top"
+                android:layout_height="200sp"
+                android:background="@drawable/retangle_drawable"
+                android:padding="6sp"
+                android:layout_margin="2sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <!-- 顯示圖片 -->
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/retangle_drawable"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:visibility="invisible" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/take_picture"
+                    android:src="@drawable/take_picture_icon"
+                    android:onClick="clickFunction" />
+
+                <ImageButton
+                    android:id="@+id/record_sound"
+                    android:src="@drawable/record_sound_icon"
+                    android:onClick="clickFunction" />
+
+                <ImageButton
+                    android:id="@+id/set_location"
+                    android:src="@drawable/location_icon"
+                    android:onClick="clickFunction" />
+
+                <ImageButton
+                    android:id="@+id/set_alarm"
+                    android:src="@drawable/alarm_icon"
+                    android:onClick="clickFunction" />
+
+                <ImageButton
+                    android:id="@+id/select_color"
+                    android:src="@drawable/select_color_icon"
+                    android:onClick="clickFunction" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/cancel_item"
+                    android:text="@android:string/cancel"
+                    android:onClick="onSubmit"
+                    android:padding="6sp"
+                    android:layout_margin="2sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/ok_teim"
+                    android:text="@android:string/ok"
+                    android:onClick="onSubmit"
+                    android:padding="6sp"
+                    android:layout_margin="2sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+        </TableLayout>
+
+    </TableLayout>
+<!-- ScrollView的結束標籤 -->
+</ScrollView>
