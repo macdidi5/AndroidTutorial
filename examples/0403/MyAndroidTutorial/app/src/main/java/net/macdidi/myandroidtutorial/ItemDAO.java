@@ -23,6 +23,7 @@ public class ItemDAO {
     public static final String TITLE_COLUMN = "title";
     public static final String CONTENT_COLUMN = "content";
     public static final String FILENAME_COLUMN = "filename";
+    public static final String RECFILENAME_COLUMN = "recfilename";
     public static final String LATITUDE_COLUMN = "latitude";
     public static final String LONGITUDE_COLUMN = "longitude";
     public static final String LASTMODIFY_COLUMN = "lastmodify";
@@ -36,6 +37,7 @@ public class ItemDAO {
                     TITLE_COLUMN + " TEXT NOT NULL, " +
                     CONTENT_COLUMN + " TEXT NOT NULL, " +
                     FILENAME_COLUMN + " TEXT, " +
+                    RECFILENAME_COLUMN + " TEXT, " +
                     LATITUDE_COLUMN + " REAL, " +
                     LONGITUDE_COLUMN + " REAL, " +
                     LASTMODIFY_COLUMN + " INTEGER)";
@@ -65,6 +67,7 @@ public class ItemDAO {
         cv.put(TITLE_COLUMN, item.getTitle());
         cv.put(CONTENT_COLUMN, item.getContent());
         cv.put(FILENAME_COLUMN, item.getFileName());
+        cv.put(RECFILENAME_COLUMN, item.getRecFileName());
         cv.put(LATITUDE_COLUMN, item.getLatitude());
         cv.put(LONGITUDE_COLUMN, item.getLongitude());
         cv.put(LASTMODIFY_COLUMN, item.getLastModify());
@@ -93,6 +96,7 @@ public class ItemDAO {
         cv.put(TITLE_COLUMN, item.getTitle());
         cv.put(CONTENT_COLUMN, item.getContent());
         cv.put(FILENAME_COLUMN, item.getFileName());
+        cv.put(RECFILENAME_COLUMN, item.getRecFileName());
         cv.put(LATITUDE_COLUMN, item.getLatitude());
         cv.put(LONGITUDE_COLUMN, item.getLongitude());
         cv.put(LASTMODIFY_COLUMN, item.getLastModify());
@@ -160,9 +164,10 @@ public class ItemDAO {
         result.setTitle(cursor.getString(3));
         result.setContent(cursor.getString(4));
         result.setFileName(cursor.getString(5));
-        result.setLatitude(cursor.getDouble(6));
-        result.setLongitude(cursor.getDouble(7));
-        result.setLastModify(cursor.getLong(8));
+        result.setRecFileName(cursor.getString(6));
+        result.setLatitude(cursor.getDouble(7));
+        result.setLongitude(cursor.getDouble(8));
+        result.setLastModify(cursor.getLong(9));
 
         // 回傳結果
         return result;
@@ -182,10 +187,10 @@ public class ItemDAO {
 
     // 建立範例資料
     public void sample() {
-        Item item = new Item(0, new Date().getTime(), Colors.RED, "關於Android Tutorial的事情.", "Hello content", "", 0, 0, 0);
-        Item item2 = new Item(0, new Date().getTime(), Colors.BLUE, "一隻非常可愛的小狗狗!", "她的名字叫「大熱狗」，又叫\n作「奶嘴」，是一隻非常可愛\n的小狗。", "", 25.04719, 121.516981, 0);
-        Item item3 = new Item(0, new Date().getTime(), Colors.GREEN, "一首非常好聽的音樂！", "Hello content", "", 0, 0, 0);
-        Item item4 = new Item(0, new Date().getTime(), Colors.ORANGE, "儲存在資料庫的資料", "Hello content", "", 0, 0, 0);
+        Item item = new Item(0, new Date().getTime(), Colors.RED, "關於Android Tutorial的事情.", "Hello content", "", "", 0, 0, 0);
+        Item item2 = new Item(0, new Date().getTime(), Colors.BLUE, "一隻非常可愛的小狗狗!", "她的名字叫「大熱狗」，又叫\n作「奶嘴」，是一隻非常可愛\n的小狗。", "", "", 25.04719, 121.516981, 0);
+        Item item3 = new Item(0, new Date().getTime(), Colors.GREEN, "一首非常好聽的音樂！", "Hello content", "", "", 0, 0, 0);
+        Item item4 = new Item(0, new Date().getTime(), Colors.ORANGE, "儲存在資料庫的資料", "Hello content", "", "", 0, 0, 0);
 
         insert(item);
         insert(item2);

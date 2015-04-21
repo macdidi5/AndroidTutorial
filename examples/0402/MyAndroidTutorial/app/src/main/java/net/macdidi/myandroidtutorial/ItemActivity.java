@@ -33,6 +33,7 @@ public class ItemActivity extends Activity {
 
     // 檔案名稱
     private String fileName;
+    private String recFileName;
 
     // 照片
     private ImageView picture;
@@ -99,7 +100,7 @@ public class ItemActivity extends Activity {
                     break;
                 case START_RECORD:
                     // 設定錄音檔案名稱
-                    item.setFileName(fileName);
+                    item.setRecFileName(recFileName);
                     break;
                 case START_LOCATION:
                     break;
@@ -197,7 +198,7 @@ public class ItemActivity extends Activity {
                 break;
             case R.id.record_sound:
                 // 錄音檔案名稱
-                final File recordFile = configFileName("R", ".mp3");
+                final File recordFile = configRecFileName("R", ".mp3");
 
                 // 如果已經有錄音檔，詢問播放或重新錄製
                 if (recordFile.exists()) {
@@ -270,6 +271,20 @@ public class ItemActivity extends Activity {
 
         return new File(FileUtil.getExternalStorageDir(FileUtil.APP_DIR),
                 prefix + fileName + extension);
+    }
+
+    private File configRecFileName(String prefix, String extension) {
+        // 如果記事資料已經有檔案名稱
+        if (item.getRecFileName() != null && item.getRecFileName().length() > 0) {
+            recFileName = item.getRecFileName();
+        }
+        // 產生檔案名稱
+        else {
+            recFileName = FileUtil.getUniqueFileName();
+        }
+
+        return new File(FileUtil.getExternalStorageDir(FileUtil.APP_DIR),
+                prefix + recFileName + extension);
     }
 
 }

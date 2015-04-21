@@ -43,38 +43,20 @@
         // 在「FILENAME_COLUMN」下方加入錄音檔案名稱欄位
         public static final String CREATE_TABLE =
                 "CREATE TABLE " + TABLE_NAME + " (" +
-                        KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                        DATETIME_COLUMN + " INTEGER NOT NULL, " +
-                        COLOR_COLUMN + " INTEGER NOT NULL, " +
-                        TITLE_COLUMN + " TEXT NOT NULL, " +
-                        CONTENT_COLUMN + " TEXT NOT NULL, " +
+                        ...
                         FILENAME_COLUMN + " TEXT, " +
                         RECFILENAME_COLUMN + " TEXT, " +    // 增加錄音檔案名稱
-                        LATITUDE_COLUMN + " REAL, " +
-                        LONGITUDE_COLUMN + " REAL, " +
-                        LASTMODIFY_COLUMN + " INTEGER, " +
-                        ALARMDATETIME_COLUMN + " INTEGER)";
+                        ...";
 
 4. 同樣在「ItemDAO.java」，修改「insert」方法：
 
         public Item insert(Item item) {
             ContentValues cv = new ContentValues();
-    
-            cv.put(DATETIME_COLUMN, item.getDatetime());
-            cv.put(COLOR_COLUMN, item.getColor().parseColor());
-            cv.put(TITLE_COLUMN, item.getTitle());
-            cv.put(CONTENT_COLUMN, item.getContent());
+            ...
             cv.put(FILENAME_COLUMN, item.getFileName());
             // 錄音檔案名稱
             cv.put(RECFILENAME_COLUMN, item.getRecFileName());
-            cv.put(LATITUDE_COLUMN, item.getLatitude());
-            cv.put(LONGITUDE_COLUMN, item.getLongitude());
-            cv.put(LASTMODIFY_COLUMN, item.getLastModify());
-            cv.put(ALARMDATETIME_COLUMN, item.getAlarmDatetime());
-            long id = db.insert(TABLE_NAME, null, cv);
-            item.setId(id);
-        
-            return item;
+            ...
         }
 
 5. 同樣在「ItemDAO.java」，修改「update」方法：
@@ -82,42 +64,23 @@
         public boolean update(Item item) {
             ContentValues cv = new ContentValues();
 
-            cv.put(DATETIME_COLUMN, item.getDatetime());
-            cv.put(COLOR_COLUMN, item.getColor().parseColor());
-            cv.put(TITLE_COLUMN, item.getTitle());
-            cv.put(CONTENT_COLUMN, item.getContent());
+            ...
             cv.put(FILENAME_COLUMN, item.getFileName());
             // 錄音檔案名稱
             cv.put(RECFILENAME_COLUMN, item.getRecFileName());
-            cv.put(LATITUDE_COLUMN, item.getLatitude());
-            cv.put(LONGITUDE_COLUMN, item.getLongitude());
-            cv.put(LASTMODIFY_COLUMN, item.getLastModify());
-            cv.put(ALARMDATETIME_COLUMN, item.getAlarmDatetime());
-            String where = KEY_ID + "=" + item.getId();
-
-            return db.update(TABLE_NAME, cv, where, null) > 0;
+            ...
         }
 
 6. 同樣在「ItemDAO.java」，修改「getRecord」方法：
 
         public Item getRecord(Cursor cursor) {
-            Item result = new Item();
-    
-            result.setId(cursor.getLong(0));
-            result.setDatetime(cursor.getLong(1));
-            result.setColor(ItemActivity.getColors(cursor.getInt(2)));
-            result.setTitle(cursor.getString(3));
-            result.setContent(cursor.getString(4));
+            ...
             result.setFileName(cursor.getString(5));
             // 錄音檔案名稱
             result.setRecFileName(cursor.getString(6));
-            // 後續的編號都要修改
+            // 後續的編號都要加一
             result.setLatitude(cursor.getDouble(7));
-            result.setLongitude(cursor.getDouble(8));
-            result.setLastModify(cursor.getLong(9));
-            result.setAlarmDatetime(cursor.getLong(9));
-    
-            return result;
+            ...
         }
 
 7. 同樣在「ItemDAO.java」，修改「sample」方法：
@@ -129,16 +92,13 @@
             Item item3 = new Item(0, new Date().getTime(), Colors.GREEN, "一首非常好聽的音樂！", "Hello content", "", "", 0, 0, 0);
             Item item4 = new Item(0, new Date().getTime(), Colors.ORANGE, "儲存在資料庫的資料", "Hello content", "", "", 0, 0, 0);
     
-            insert(item);
-            insert(item2);
-            insert(item3);
-            insert(item4);
+            ...
         }
 
 8. 開啟「MyDBHelper.java」，增加資料庫版本編號：
 
         // 資料庫版本，資料結構改變的時候要更改這個數字，通常是加一
-        public static final int VERSION = 3;
+        public static final int VERSION = 2;
 
 9. 開啟「ItemActivity.java」，增加錄音檔案名稱欄位變數：
 
@@ -185,5 +145,22 @@
             }
     
         }
+
+12. 同樣在「ItemActivity.java」，找到「onActivityResult」方法，修改設定錄音檔案名稱呼叫的方法：
+
+        @Override
+        protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+            if (resultCode == Activity.RESULT_OK) {
+                switch (requestCode) {
+                    ...
+                    case START_RECORD:
+                        // 修改設定錄音檔案名稱
+                        item.setRecFileName(recFileName);
+                        break;
+                    ...
+                }
+            }
+        }
+
 
 完成全部的修改以後執行應用程式，測試同一個記事資料照相與錄音的功能。
