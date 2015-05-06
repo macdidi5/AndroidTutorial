@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    android:previewImage：縮圖
+    android:initialLayout：小工具元件使用的畫面資源
+    android:configure：小工具設定元件類別
+-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="40dp"
+    android:updatePeriodMillis="86400000"
+    android:previewImage="@drawable/example_appwidget_preview"
+    android:initialLayout="@layout/item_app_widget"
+    android:configure="net.macdidi.myandroidtutorial.ItemAppWidgetConfigureActivity"
+    android:widgetCategory="home_screen"
+    android:initialKeyguardLayout="@layout/item_app_widget"></appwidget-provider>

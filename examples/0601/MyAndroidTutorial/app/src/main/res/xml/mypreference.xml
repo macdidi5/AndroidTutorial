@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <Preference
+        android:key="DEFAULT_COLOR"
+        android:title="@string/default_color"
+        android:summary="@string/default_color_summary">
+        <!-- 啟動選擇顏色元件 -->
+        <intent
+            android:action="net.macdidi.myandroidtutorial.CHOOSE_COLOR"
+            android:targetPackage="net.macdidi.myandroidtutorial"
+            android:targetClass="net.macdidi.myandroidtutorial.ColorActivity"/>
+    </Preference>
+
+    <ListPreference
+        android:key="NOTIFY_MINUTES"
+        android:title="@string/default_notify"
+        android:summary="@string/default_notify_summary"
+        android:entries="@array/notify_minutes_array"
+        android:entryValues="@array/notify_minutes_value_array"
+        android:defaultValue="5" />
+</PreferenceScreen>
