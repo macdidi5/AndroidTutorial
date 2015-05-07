@@ -27,6 +27,13 @@
 	*	[（1）使用照相機與麥克風](http://www.codedata.com.tw/mobile/android-tutorial-the-4th-class-1-camera-microphone/)
 	*	[（2）設計地圖應用程式 - Google Maps Android API v2](http://www.codedata.com.tw/mobile/android-tutorial-the-4th-class-google-maps-android-api-v2/)
 	*	[（3）讀取裝置目前的位置 - Google Services Location](http://www.codedata.com.tw/mobile/android-tutorial-the-4th-class-3-google-services-location/)
-
+*	Android Tutorial 第五堂
+	*	(1) 建立廣播接收元件 - BroadcastReceiver
+	*	(2) 使用系統通知服務 - Notification
+	*	(3) 設計小工具元件 - AppWidget
+*	Android Tutorial 第六堂
+	*	(1) Material Design - Theme與Transition
+	*	(2) Material Design - RecylerView
+	*	(3) Material Design - Shared Element與自定動畫效果
 ===============
 http://www.codedata.com.tw/author/michael
