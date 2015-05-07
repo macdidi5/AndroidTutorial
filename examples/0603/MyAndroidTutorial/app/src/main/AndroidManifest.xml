@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.macdidi.myandroidtutorial" >
+
+    <!-- 需要攝錄鏡頭設備 -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- 寫入外部儲存設備 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 讀取外部儲存設備 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- 新增地圖元件的時候，自動加入的設定 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 接收開機完成廣播事件 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <!-- 記事項目元件 -->
+        <activity android:name=".ItemActivity" >
+            <intent-filter>
+
+                <!-- 新增用的名稱 -->
+                <action android:name="net.macdidi.myandroidtutorial.ADD_ITEM" />
+                <!-- 修改用的名稱 -->
+                <action android:name="net.macdidi.myandroidtutorial.EDIT_ITEM" />
+                <!-- 一定要加入，內容固定不變 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 選擇顏色 -->
+        <activity
+            android:name=".ColorActivity"
+            android:label="@string/title_activity_color"
+            android:theme="@android:style/Theme.Dialog" >
+
+            <!-- 加入設定元件啟動用的Action名稱 -->
+            <intent-filter>
+                <action android:name="net.macdidi.myandroidtutorial.CHOOSE_COLOR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 設定元件 -->
+        <activity android:name=".PrefActivity" />
+        <!-- 錄音元件 -->
+        <activity
+            android:name=".RecordActivity"
+            android:label="@string/title_record"
+            android:theme="@android:style/Theme.Dialog" />
+        <!-- 播放元件 -->
+        <activity
+            android:name=".PlayActivity"
+            android:label="@string/title_play"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <!-- Google Service版本 -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Google Map API key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- 地圖元件 -->
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+        <receiver
+            android:name=".InitAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 小工具元件 -->
+        <receiver android:name=".ItemAppWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/item_app_widget_info" />
+        </receiver>
+
+        <!-- 小工具設定元件 -->
+        <activity android:name=".ItemAppWidgetConfigureActivity" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 檢視照片元件 -->
+        <activity android:name=".PictureActivity" />
+    </application>
+
+</manifest>
