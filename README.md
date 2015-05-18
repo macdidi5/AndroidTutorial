@@ -29,7 +29,7 @@
 	*	[（3）讀取裝置目前的位置 - Google Services Location](http://www.codedata.com.tw/mobile/android-tutorial-the-4th-class-3-google-services-location/)
 *	Android Tutorial 第五堂
 	*	[(1) 建立廣播接收元件 - BroadcastReceiver](http://www.codedata.com.tw/mobile/android-tutorial-the-5th-class-1-broadcastreceiver-alarmmanager/)
-	*	(2) 使用系統通知服務 - Notification
+	*	(2) [系統通知服務 - Notification](http://www.codedata.com.tw/mobile/android-tutorial-the-5th-class-2-notification/)
 	*	(3) 設計小工具元件 - AppWidget
 *	Android Tutorial 第六堂
 	*	(1) Material Design - Theme與Transition
