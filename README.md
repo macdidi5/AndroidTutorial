@@ -32,7 +32,7 @@
 	*	[(2) 系統通知服務 - Notification](http://www.codedata.com.tw/mobile/android-tutorial-the-5th-class-2-notification/)
 	*	[(3) 設計小工具元件 - AppWidget](http://www.codedata.com.tw/mobile/android-tutorial-the-5th-class-3-appwidget/)
 *	Android Tutorial 第六堂
-	*	(1) Material Design - Theme與Transition
+	*	[(1) Material Design - Theme與Transition](http://www.codedata.com.tw/mobile/android-tutorial-the-6th-class-material-design-theme-transition/)
 	*	(2) Material Design - RecylerView
 	*	(3) Material Design - Shared Element與自定動畫效果
 
