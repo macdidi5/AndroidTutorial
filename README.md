@@ -34,7 +34,7 @@
 *	Android Tutorial 第六堂
 	*	[(1) Material Design - Theme與Transition](http://www.codedata.com.tw/mobile/android-tutorial-the-6th-class-material-design-theme-transition/)
 	*	[(2) Material Design - RecylerView](http://www.codedata.com.tw/mobile/android-tutorial-the-6th-class-2-material-design-recylerview/)
-	*	(3) Material Design - Shared Element與自定動畫效果
+	*	[(3) Material Design - Shared Element與自定動畫效果](http://www.codedata.com.tw/mobile/android-tutorial-the-6th-class-material-design-shared-element/)
 
 ===============
 http://www.codedata.com.tw/author/michael
