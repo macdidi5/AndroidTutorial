@@ -1,5 +1,7 @@
 #Android Tutorial
 
+### 2015/10/22：Android Tutorial系列專欄已經更新為Android 6，於2015/10/22開始連載，每週一篇，第一篇專欄 [http://www.codedata.com.tw/mobile/android-6-tutorial-1-1/](http://www.codedata.com.tw/mobile/android-6-tutorial-1-1/) 。GitHub在 [https://github.com/macdidi5/Android-6-Tutorial](https://github.com/macdidi5/Android-6-Tutorial) 。
+
 ### 2015/03/02：專欄與範例程式改為Android 5與Android Studio
 ### 需要從Eclipse ADT專案轉移到Android Studio，請參考AndroidTutorial5_Migrate.md文件的說明
 
